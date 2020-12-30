@@ -10,9 +10,28 @@
     <title>NLP news article evaluation</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../styles/main.scss" />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <script src="../index.js"></script>
+    <div class="container">
+      <header><h1>NLP analysis for News</h1></header>
+      <div class="app">
+        <form>
+          <label
+            >https://www.fastcompany.com/90588298/how-data-designers-helped-us-make-sense-of-2020s-chaos</label
+          >
+          <input
+            id="input"
+            type="text"
+            placeholder="type url"
+            name="urlInput"
+          />
+          <button id="button" type="submit">submit</button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+    <footer>footer</footer>
+    <script src="./main.js"></script>
   </body>
 </html>

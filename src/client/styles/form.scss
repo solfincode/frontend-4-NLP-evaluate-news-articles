@@ -1,0 +1,49 @@
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 100%;
+  background: $main-input-color;
+  border-radius: 10px;
+  color: #333;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  padding: 5px 10px;
+}
+
+button {
+  width: 400px;
+  height: 60px;
+  background: $btn-primary;
+  border-radius: 10px;
+  color: white;
+  font-size: 26px;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  margin: 40px 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+button:hover {
+  box-shadow: 2px 14px 15px rgba(0, 0, 0, 0.3);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: $dark-color;
+  font-family: "Roboto", sans-serif;
+}
