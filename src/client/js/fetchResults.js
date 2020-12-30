@@ -1,5 +1,3 @@
-import { handleSubmit } from "./formHandler";
-
 const result = document.getElementById("result");
 const button = document.getElementById("button");
 const dataNode = document.createElement("div");
