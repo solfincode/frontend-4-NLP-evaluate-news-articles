@@ -20,7 +20,7 @@ const displayUI = (data) => {
         <div><b>confidence:</b> ${data.store.confidence}</div>
         <div><b>irony:</b> ${data.store.irony}</div>
         `;
-  result.appendChild(dataNode);
+  result.innerHTML = dataNode.outerHTML;
 };
 
 export { getData, displayUI };
