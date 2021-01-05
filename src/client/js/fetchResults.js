@@ -14,10 +14,11 @@ button.addEventListener("click", getData);
 
 //display UI
 const displayUI = (data) => {
-  console.log(data);
   dataNode.innerHTML = `
-        <div>${data.store.model}</div>
-        <div>${data.store.subjectivity}</div>
+        <div><b>model:</b> ${data.store.model}</div>
+        <div><b>subjectivity:</b> ${data.store.subjectivity}</div>
+        <div><b>confidence:</b> ${data.store.confidence}</div>
+        <div><b>irony:</b> ${data.store.irony}</div>
         `;
   result.appendChild(dataNode);
 };
