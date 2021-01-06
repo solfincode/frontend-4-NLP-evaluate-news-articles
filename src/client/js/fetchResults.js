@@ -10,8 +10,9 @@ const getData = async () => {
     .catch((err) => console.log(err));
 };
 
-button.addEventListener("click", getData);
-
+document.addEventListener("DOMContentLoaded", () => {
+  button.addEventListener("click", getData);
+});
 //display UI
 const displayUI = (data) => {
   dataNode.innerHTML = `
