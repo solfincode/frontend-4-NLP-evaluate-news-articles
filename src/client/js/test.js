@@ -1,6 +1,5 @@
 //jest test for formHandler
 const validateUrl = require("./formHandler");
-const fetch = require("node-fetch");
 
 test("result is", () => {
   function validateUrl(url) {
