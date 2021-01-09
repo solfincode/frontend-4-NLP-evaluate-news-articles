@@ -1,4 +1,5 @@
 import regeneratorRuntime from "regenerator-runtime";
+import * as fetchModule from "./fetchResults";
 
 //dom element
 const button = document.getElementById("button");
@@ -32,8 +33,9 @@ function handleSubmit(event) {
   const data = {
     url: input.value,
   };
-  postData("/submitData", data);
+  postData("http://localhost:3000/submitData", data);
   console.log("::: Form Submitted :::");
+  setTimeout(fetchModule.getData(), 5000);
 }
 
 //post event

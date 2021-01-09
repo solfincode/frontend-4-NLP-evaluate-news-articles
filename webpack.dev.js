@@ -1,6 +1,7 @@
 const path = require("path");
-const HtmlWebPackPlugins = require("html-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
+const WorkBoxPlugin = require("workbox-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -20,9 +21,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebPackPlugins({
+    new HtmlWebPackPlugin({
       template: "./src/client/views/index.html",
       filename: "./index.html",
     }),
+    new WorkBoxPlugin.GenerateSW(),
   ],
 };

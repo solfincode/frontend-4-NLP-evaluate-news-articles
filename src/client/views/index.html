@@ -17,9 +17,7 @@
       <header><h1>NLP analysis for News</h1></header>
       <div class="app">
         <form>
-          <label
-            >https://www.fastcompany.com/90588298/how-data-designers-helped-us-make-sense-of-2020s-chaos</label
-          >
+          <label>URL - https://en.wikipedia.org/wiki/Google</label>
           <input
             id="input"
             type="text"
@@ -35,5 +33,12 @@
     </div>
     <footer>footer</footer>
     <script src="./main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>

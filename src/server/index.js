@@ -32,14 +32,14 @@ const postMeaningCloud = async (urlData) => {
   const response = await fetch(meaningCloudUrl, {
     method: "POST",
     headers: {
-      "Content-Type": "application-json; charset=UTF-8",
+      "Content-Type": "application/json; charset=UTF-8",
     },
     body: JSON.stringify(urlData),
   });
 
   try {
-    store = response.json();
-    return store;
+    data = await response.json();
+    return data;
   } catch (err) {
     console.log(err);
   }

@@ -4,7 +4,7 @@
   "description": "## 1.NLP evaluate news articles",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/jest/bin/jest.js --watch",
+    "test": "jest",
     "dev": "nodemon src/server/index.js",
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack serve --config webpack.dev.js --watch"
